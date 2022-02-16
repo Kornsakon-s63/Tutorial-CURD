@@ -112,16 +112,16 @@ export default class TodoList extends Component{
                             tutorials.map((tutorial,index)=>(
                                <li
                                 className={"list-group-item"+
-                                (index === currentIndex ? "active":"")
+                                (index === currentIndex ? " active":"")
                                 }
                                 onClick={()=> this.setActiveTutorial(tutorial,index)}
                                 key={index}
                                 >
                                    {tutorial.title}
-                               </li> 
+                               </li>
                             ))}
                     </ul>
-                    <button 
+                    <button
                      className="m-3 btn btn-sm btn-danger"
                      onClick={this.removeAllTutorials}
                     >
